@@ -9,6 +9,21 @@
       <sourceFolder url="file://$MODULE_DIR$/Graph" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SeedCode" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/그래프" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backtracking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DFS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Greedy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Simulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Union-Find" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/구현" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/문자열" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/분할정복" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/이분탐색" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/자료구조" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/재귀" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/정렬" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/최단경로" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/투포인터" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="9" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
