@@ -1,5 +1,3 @@
-package 알고리즘수업;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,7 +10,7 @@ import java.util.StringTokenizer;
  * 둘째 수 : 북,남 => 왼쪽 경계로부터의 거리 (열)
  * 		  동, 서 => 위쪽 경계로부터의 거리 (행)
  * */
-public class Main_백준_2564_경비원_윤지선 {
+public class 백준_2564_경비원 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
