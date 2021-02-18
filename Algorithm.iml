@@ -25,6 +25,7 @@
       <sourceFolder url="file://$MODULE_DIR$/최단경로" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/투포인터" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tree" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="9" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
