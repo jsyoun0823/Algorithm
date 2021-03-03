@@ -28,6 +28,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Tree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/수학" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/위상정렬" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/연습" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
