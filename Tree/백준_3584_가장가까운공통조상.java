@@ -68,7 +68,7 @@ public class 백준_3584_가장가까운공통조상 {
         level[cur] = depth;
         parent[cur] = p;
         for (int next: list[cur]) {
-            if(next != p) {
+            if(next != p) { // 양방향이 아니라 없애도됨
                 dfs(next, depth + 1, cur);
             }
         }

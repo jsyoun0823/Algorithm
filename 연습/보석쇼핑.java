@@ -1,47 +1,47 @@
 import java.util.*;
 
 public class 보석쇼핑 {
-    static int gemSize, min, len;
-    static String[] gems;
+
     public static void main(String[] args) {
-        gems = new String[] {"DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"};
+        String[] gems = new String[] {"XYZ", "XYZ", "XYZ"};
+
         int[] answer = new int[2];
-        len = gems.length; // 8
+        int len = gems.length;
 
         Set<String> gem = new HashSet<>();
         for (String g:gems) {
             gem.add(g);
         }
-        gemSize = gem.size(); // 4
+        int gemSize = gem.size();
 
-        if(gemSize == 1) {
-            answer[0] = answer[1] = 1;
-//            return answer;
+        Set<String> select = new HashSet<>();
+        Map<String, Integer> count = new HashMap<>();
+
+        int left = 0;
+        int min = len;
+
+        // gem을 넣을때 count도 세서 같이 넣는다!
+        for (int i = 0; i < len; i++) {
+            String cur = gems[i];
+            select.add(cur);
+            count.put(cur, count.getOrDefault(cur, 0) + 1);
+
+            while(select.size() == gemSize) {
+                if(min > i-left) {
+                    min = i - left;
+                    answer[0] = left + 1;
+                    answer[1] = i + 1;
+                }
+
+                if(count.get(gems[left]) <= 1){
+                    select.remove(gems[left]);
+                    count.remove(gems[left]);
+                } else {
+                    count.put(gems[left], count.get(gems[left]) - 1);
+                }
+                left++;
+            }
         }
-
-        Set<String> set = new HashSet<>();
-        for (int k = 0; k < gemSize; k++) {
-            set.add(gems[k]);
-        } // 적어도 4종류면 4개는 넣고 시작~
-
-        min = len;
-        for (int k = 0; k < len - gemSize - 1; k++) {
-            select(k, k + gemSize, gemSize ,set);
-        }
-
-        System.out.println(min);
-    }
-
-    public static void select(int start, int end, int cnt, Set<String> set) {
-        if(gemSize == set.size()) {
-            min = Math.min(min, cnt);
-            return;
-        }
-
-        if(end >= len) return;
-
-        set.add(gems[end]);
-        select(start, end + 1, cnt + 1, set);
-        set.remove(gems[end]);
+        System.out.println(Arrays.toString(answer));
     }
 }
