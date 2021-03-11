@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class 보석쇼핑 {
+public class 프로그래머스_보석쇼핑 {
 
     public static void main(String[] args) {
         String[] gems = new String[] {"XYZ", "XYZ", "XYZ"};

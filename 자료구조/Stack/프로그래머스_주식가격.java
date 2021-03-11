@@ -1,7 +1,9 @@
+package Stack;
+
 import java.util.Arrays;
 import java.util.Stack;
 
-public class 주식가격 {
+public class 프로그래머스_주식가격 {
     public static void main(String[] args) {
         int[] prices = {1, 2, 3, 2, 3};
 

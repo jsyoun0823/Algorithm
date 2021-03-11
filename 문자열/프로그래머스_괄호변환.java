@@ -1,15 +1,14 @@
 import java.util.*;
 
-class Solution {
-    public String solution(String p) {
-        return correct(p);
+class 프로그래머스_괄호변환 {
+    public static void main(String[] args) {
+        String p = "";
+        System.out.println(correct(p));
     }
-    
-    public String correct(String str) {
+
+    public static String correct(String str) {
         if(str.length() == 0 || isCorrect(str)) return str;
-        
-        String ans = "";
-        
+
         String u = "";
         String v = "";
         for(int j = 2; j <= str.length(); j+=2) {
@@ -43,7 +42,7 @@ class Solution {
         }
     }
     
-    public boolean isBalance(String s) {
+    public static boolean isBalance(String s) {
         int cnt = 0;
         char[] crr = s.toCharArray();
         for(char c : crr) {
@@ -53,7 +52,7 @@ class Solution {
         return cnt == 0;
     }
     
-    public boolean isCorrect(String str) {
+    public static boolean isCorrect(String str) {
         Stack<Character> s = new Stack<>();
         char[] crr = str.toCharArray();
         for(char c : crr) {

@@ -27,8 +27,7 @@ public class 백준_1655_가운데를말해요 {
 			} else {
 				minHeap.offer(num);
 			}
-			
-			
+
 			if(!maxHeap.isEmpty() && !minHeap.isEmpty()) {
 				// 3. 최소힙의 최소값 > 최대힙의 최대값 이 유지되는지 확인하고, 어긋나면 swap해준다.
 				if(maxHeap.peek() > minHeap.peek()) {

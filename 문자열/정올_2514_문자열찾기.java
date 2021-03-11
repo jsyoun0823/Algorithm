@@ -15,6 +15,7 @@ public class 정올_2514_문자열찾기 {
 			if(("KOI").equals(sub)) kcnt++;
 			if(("IOI").equals(sub)) icnt++;
 		}
+
 		System.out.println(kcnt + "\n" + icnt);
 	} // end of main
 } // end of class
