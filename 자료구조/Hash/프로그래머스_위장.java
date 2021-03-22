@@ -1,6 +1,8 @@
 package Hash;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class 프로그래머스_위장 {

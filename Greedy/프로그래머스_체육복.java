@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class 프로그래머스_체육복 {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n - lost.length;
@@ -12,6 +14,8 @@ public class 프로그래머스_체육복 {
                 }
             }
         }
+        int[] arr = new int[5];
+        Arrays.fill(arr, 3);
 
         for(int i=0; i<lost.length; i++) {
             int cur = lost[i];

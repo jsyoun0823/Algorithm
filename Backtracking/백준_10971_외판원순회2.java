@@ -26,13 +26,14 @@ public class 백준_10971_외판원순회2 {
         for (int i = 1; i < N; i++) {
             visited = new boolean[N];
             sum = 0;
-            if(cost[0][i] != 0) dfs(0, i, 1); // dfs 탐색 시작
+            if(cost[0][i] != 0)
+                dfs(0, i, 1); // dfs 탐색 시작
         }
         System.out.println(min);
     } // end of main
 
     public static void dfs(int r, int c, int cnt) {
-        if(sum > min) return; // 가지치기 : 임시해보다 크면 return
+        if(sum > min) return; // 임시해보다 크면 return
 
         sum += cost[r][c]; // 비용 누적
         visited[r] = true; // 방문 체크
