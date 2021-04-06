@@ -10,6 +10,12 @@ public class BFS_노드 {
 	public static void main(String[] args) {
 		int[][] edge = {{3,6}, {4,3}, {3,2}, {1,3}, {1,2}, {2,4}, {5,2}};
         N = 6;
+
+        switch (N) {
+            case 0:
+            case 1:
+
+        }
         
         arr = new ArrayList[N+2];
         
