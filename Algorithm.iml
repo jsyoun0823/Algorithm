@@ -22,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/자료구조" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/재귀" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/정렬" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/최단경로" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MST,최단경로" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/투포인터" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DP" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tree" isTestSource="false" />
