@@ -30,6 +30,7 @@
       <sourceFolder url="file://$MODULE_DIR$/위상정렬" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_코테에나왔던문제" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/게임이론" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/기출" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
