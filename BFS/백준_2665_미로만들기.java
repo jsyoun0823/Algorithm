@@ -28,6 +28,9 @@ public class 백준_2665_미로만들기 {
         Queue<int[]> queue = new LinkedList<>();
 
         int[][] visited = new int[n][n]; // 검은방 -> 흰방 바꾼 횟수 저장
+        for (int i = 0; i < n; i++) {
+            Arrays.fill(visited[i], Integer.MAX_VALUE);
+        }
 
         queue.offer(new int[] {0, 0});
         visited[0][0] = 0;
@@ -44,13 +47,13 @@ public class 백준_2665_미로만들기 {
                 if(nr < 0 || nr >= n || nc < 0 || nc >= n) continue; // 배열 범위 체크
 
                 if(map[nr][nc] == '0') { // 검은방
-                    if(visited[nr][nc] == 0 || visited[nr][nc] > visited[r][c] + 1) {
+                    if(visited[nr][nc] > visited[r][c] + 1) {
                         visited[nr][nc] = visited[r][c] + 1; // 횟수 늘려서 저장
                         queue.offer(new int[] {nr, nc});
                     }
                 } else { // 흰 방
-                    if(visited[nr][nc] == 0 || visited[nr][nc] >= visited[r][c]) {
-                        visited[nr][nc] = visited[r][c]; // 횟수 늘려서 저장
+                    if(visited[nr][nc] > visited[r][c]) {
+                        visited[nr][nc] = visited[r][c]; // 횟수 그대로 저장
                         queue.offer(new int[] {nr, nc});
                     }
                 }
