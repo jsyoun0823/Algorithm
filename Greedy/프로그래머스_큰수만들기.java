@@ -1,29 +1,31 @@
+import java.util.*;
+
 public class 프로그래머스_큰수만들기 {
 
 	public static void main(String[] args) {
 		String number = "4177252841" ;
 		int k = 4;
-		String ans = "";
-		
-        int len = number.length() - k;
-		int s = 0;
-		for (int i = 0; i < len; i++) {
-			char max = number.charAt(s);
-			int index = s;
-			for (int j = s; j <= k+i; j++) {
-				char tc = number.charAt(j);
-				if(max < tc) {
-					max = tc;
-					index = j;
-				}
-                if(tc == '9') break;
+
+		StringBuilder sb = new StringBuilder();
+
+		int len = number.length() - k;
+
+		Deque<Character> dq = new ArrayDeque<>();
+		for(int i=0; i<number.length(); i++) {
+			char cur = number.charAt(i);
+
+			while(!dq.isEmpty() && dq.peekLast() < cur && k > 0) {
+				dq.pollLast();
+				k--;
 			}
-			s = index + 1;
-			ans += max;
+
+			dq.offer(cur);
 		}
-		
-		System.out.println(ans);
 
+		for(int i=0; i<len; i++) {
+			sb.append(dq.poll());
+		}
+
+		System.out.println(sb);
 	}
-
 }
