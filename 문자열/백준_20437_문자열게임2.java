@@ -67,6 +67,7 @@ public class 백준_20437_문자열게임2 {
         for (int i = 0; i < W.length(); i++) {
             char c = W.charAt(i);
 
+            // s a y a
             while(map.containsKey(c) && map.get(c) + 1 == K) {
                 min = Math.min(min, queue.size() + 1);
 
@@ -80,7 +81,8 @@ public class 백준_20437_문자열게임2 {
             }
 
             map.put(c, map.getOrDefault(c, 0) + 1);
-            queue.offer(c);
+            queue.offer(c);// a g d a
+            // a sdkfljsdf a dsgsd a
         }
 
         // 만족하는 연속 문자열이 없을 시 -1을 출력
@@ -100,7 +102,7 @@ public class 백준_20437_문자열게임2 {
         for (int i = 0; i < W.length(); i++) {
             char c = W.charAt(i);
             //  queue<integer> idx, count
-            // s -> 0  // 1
+            // s -> 0 , 5 // 1
             // u -> 7, 8, 9  // 3
             // p -> 1 1      // 3
 
@@ -113,7 +115,7 @@ public class 백준_20437_문자열게임2 {
             // 1 1 1 1 1 1 1 1
 
             Queue<Integer> temp = map.get(c);
-
+        // s u d d d d s
             if(!temp.isEmpty() && temp.size() + 1 == K) {
                 max = Math.max(max, i - temp.poll() + 1);
             }

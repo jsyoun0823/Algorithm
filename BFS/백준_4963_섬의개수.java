@@ -16,6 +16,7 @@ public class 백준_4963_섬의개수 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		while(true) {
+			int nx, ny, nd;
 			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 			W = Integer.parseInt(st.nextToken()); // 너비 (열) <= 50
 			H = Integer.parseInt(st.nextToken()); // 높이 (행) <= 50
