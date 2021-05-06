@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 public class 백준_5557_1학년 {
+
     // 중간에 나올 수 있는 수의 범위가 0-20 이므로
-    // 각 i번째 나올수 있는 숫자의 개수를 계싼
+    // 각 i번째 나올수 있는 숫자의 개수를 계산
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -19,7 +19,7 @@ public class 백준_3055_탈출 {
         int sy = 0;
 
         Queue<int[]> waterQ = new LinkedList<>();
-
+        boolean[][] waterVisited = new boolean[R][C];
         for (int i = 0; i < R; i++) {
             String line = br.readLine();
             for (int j = 0; j < C; j++) {
@@ -32,6 +32,7 @@ public class 백준_3055_탈출 {
                     sy = j;
                 } else if(map[i][j] == '*') {
                     waterQ.add(new int[] {i, j});
+                    waterVisited[i][j] = true;
                 }
             }
         }
@@ -64,8 +65,11 @@ out:        while(!goQ.isEmpty()) {
 
                         if (map[nwr][nwc] == 'X' || map[nwr][nwc] == 'D') continue;
 
-                        map[nwr][nwc] = '*';
-                        waterQ.offer(new int[]{nwr, nwc});
+                        if(!waterVisited[nwr][nwc]) {
+                            map[nwr][nwc] = '*';
+                            waterQ.offer(new int[]{nwr, nwc});
+                            waterVisited[nwr][nwc] = true;
+                        }
                     }
                 }
 
