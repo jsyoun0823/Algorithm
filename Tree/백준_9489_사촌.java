@@ -9,7 +9,6 @@ public class 백준_9489_사촌 {
     public static void main(String[] args) throws IOException {
         // 1) 첫번째 정수는 트리의 루트 노드
         // 2) 연속된 수의 집합이 노드의 자식이 됨
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         StringBuilder sb = new StringBuilder();
