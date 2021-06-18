@@ -32,6 +32,7 @@
       <sourceFolder url="file://$MODULE_DIR$/게임이론" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/기출" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_기출" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeetCode-Mock" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

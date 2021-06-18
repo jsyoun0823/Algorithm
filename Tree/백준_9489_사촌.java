@@ -41,8 +41,6 @@ public class 백준_9489_사촌 {
             for (int i = 2; i <= n; i++) {
                 int cur = nodes[i];
 
-                if (cur == k) kIdx = i;
-
                 if (cur != prev + 1) { // 연속되지 않았으면
                     p++;
                 }
