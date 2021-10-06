@@ -34,6 +34,7 @@
       <sourceFolder url="file://$MODULE_DIR$/_기출" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeetCode-Mock" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_연습및공부용" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/누적합" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
