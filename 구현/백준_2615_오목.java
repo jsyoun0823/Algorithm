@@ -49,7 +49,7 @@ public class 백준_2615_오목 {
     }
 
     // \
-    private static boolean leftDiagonal(int i, int j) { // 2 1
+    private static boolean leftDiagonal(int i, int j) {
         for (int k = 1; k < 5; k++) {
             if(!chkBound(i+k, j+k) || map[i][j] != map[i + k][j + k]) return false;
         }
