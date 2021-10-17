@@ -27,15 +27,12 @@ public class 백준_1931_회의실배정 {
 			arr[i][1] = Integer.parseInt(st.nextToken());
 		}
 
-		Arrays.sort(arr, new Comparator<int[]>() {
-			@Override
-			public int compare(int[] o1, int[] o2) {
-				if (o2[1] == o1[1]) { // 종료시간 같으면
-					return o1[0] - o2[0]; // 회의 시작시간 기준으로 오름차순 정렬
-				} else
-					return o1[1] - o2[1]; // 회의 종료시간 일찍 끝나게
+		Arrays.sort(arr, (o1, o2) -> {
+			if (o2[1] == o1[1]) { // 종료시간 같으면
+				return o1[0] - o2[0]; // 회의 시작시간 기준으로 오름차순 정렬
+			} else
+				return o1[1] - o2[1]; // 회의 종료시간 일찍 끝나게
 
-			}
 		});
 		System.out.println(solve()); // 최대 사용할 수 있는 회의의 최대 개수
 	}

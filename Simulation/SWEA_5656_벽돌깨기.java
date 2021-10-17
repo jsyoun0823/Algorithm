@@ -1,4 +1,3 @@
-package 알고리즘수업;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -16,7 +16,7 @@ public class 백준_16398_행성연결 {
         }
 
         @Override
-        public int compareTo(Planet planet) {
+        public int compareTo (Planet planet) {
             return Long.compare(this.cost, planet.cost);
         }
     }
