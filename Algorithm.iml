@@ -33,6 +33,7 @@
       <sourceFolder url="file://$MODULE_DIR$/기출" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_기출" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeetCode-Mock" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/YBM_cos_pro" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_연습및공부용" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_연습및공부용" isTestSource="true" />
     </content>

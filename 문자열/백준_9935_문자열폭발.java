@@ -59,30 +59,5 @@ public class 백준_9935_문자열폭발 {
         }
 
         System.out.println(sb);
-
-//
-//        Stack<Character> stack = new Stack<>();
-//        for (int i = 0; i < str.length(); i++) {
-//            char c = str.charAt(i);
-//
-//            // m i r k o v 'C'
-//
-//            // m i r k o v C '4'
-//            // 뒤에서부터 체크
-//            int idx = 1;
-//            while(c == bomb[bomb.length - idx]) {
-//                if(stack.size() < bomb.length) break;
-//
-//                // stack : m i r k o v C
-//                // c : 4
-//                // bomb : C4
-//                idx++;
-//                if(stack.peek() == bomb[bomb.length - idx]) {
-//
-//                }
-//            }
-//            stack.push(c);
-//
-//        }
     }
 }
