@@ -14,6 +14,8 @@ public class 백준_14002_가장긴증가하는부분수열4 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
         int[] LIS = new int[N];
+        // 10 20 10 30 40
+        // 1   2  1  3  4
         int max = 0;
         int maxIdx = 0;
         for (int i = 0; i < N; i++) {
